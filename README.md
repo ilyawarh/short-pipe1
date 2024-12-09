@@ -21,7 +21,7 @@ Pipeline Directory Structure:
 
 Additional Files:
 --------------------------
-- setup_environment.sh - Bash script to install the env
+- setup_environment.sh - Bash script to install the env (including third party tools)
 - setup_workplace.sh - Bash script to expand this workplace
 - IMGvr_to_centrifuge_DB.py - Python script to transform IMG/VR database files to usable input for "centrifuge-build"  
 
