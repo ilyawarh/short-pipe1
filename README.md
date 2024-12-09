@@ -17,7 +17,6 @@ Pipeline Directory Structure:
 - config/               # Configuration files (e.g., config.yaml, subenvironments)
 - scripts/              # Custom scripts (e.g., generate_report.py)
 - tools/	              # External tools (KrakenTools, DeepVirFinder)
-- setup_workplace.sh    # Bash script to expand the workplace ready to go
 - setup_environment.sh  # Bash script to install the env
 - Snakefile
 
@@ -26,6 +25,6 @@ Steps to Run the Pipeline:
 1. Place raw reads in 'raw_reads/' folder, named as '<sample>_R1_001.fastq.gz' and '<sample>_R2_001.fastq.gz'.
 2. Update 'config/config.yaml' with your sample names, database paths, and thread settings.
 3. Activate the pipeline environment:
-   mamba activate virpipe_short1
+   conda activate virpipe_short1
 4. Run the pipeline with:
    snakemake --cores <number_of_cores> --use-conda 
