@@ -3,22 +3,27 @@ short reads, standard scheme, nt database (IMG/VR)
 
 Pipeline Directory Structure:
 -----------------------------
-- raw_reads/            # Place your raw FASTQ files here
-- results/              # All pipeline outputs will be stored here
-  - fastqc/             # FastQC reports
-  - trimmed_reads/      # Trimmed reads from Trim Galore
-  - kraken2/            # Kraken2 outputs
-  - viral_reads/        # Viral reads filtered by KrakenTools
-  - assemblies/         # Contigs assembled by SPAdes
-  - centrifuge/         # Centrifuge taxonomical classification results
-  - deepvirfinder/      # DeepVirFinder predictions
-  - virsorter2/         # VirSorter2 outputs
-  - reports/            # Final reports for each sample
-- config/               # Configuration files (e.g., config.yaml, subenvironments)
-- scripts/              # Custom scripts (e.g., generate_report.py)
-- tools/	              # External tools (KrakenTools, DeepVirFinder)
-- setup_environment.sh  # Bash script to install the env
+- raw_reads/            
+- results/              
+  - fastqc/             
+  - trimmed_reads/      
+  - kraken2/            
+  - viral_reads/        
+  - assemblies/         
+  - centrifuge/         
+  - deepvirfinder/      
+  - virsorter2/         
+  - reports/            
+- config/               
+- scripts/              
+- tools/	                
 - Snakefile
+
+Additional Files:
+--------------------------
+- setup_environment.sh - Bash script to install the env
+- setup_workplace.sh - Bash script to expand this workplace
+- IMGvr_to_centrifuge_DB.py - Python script to transform IMG/VR database files to usable input for "centrifuge-build"  
 
 Steps to Run the Pipeline:
 --------------------------
