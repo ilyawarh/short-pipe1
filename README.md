@@ -14,9 +14,15 @@ Pipeline Directory Structure:
   - deepvirfinder/      
   - virsorter2/         
   - reports/            
-- config/               
-- scripts/              
-- tools/	                
+- config/
+  - config.yaml
+  - deepvirfinder_env.yaml
+  - virsorter2_env.yaml               
+- scripts/
+  - generate_report.py              
+- tools/
+  - KrakenTools/
+  - DeepVirFinder/   	                
 - Snakefile
 
 Additional Files:
